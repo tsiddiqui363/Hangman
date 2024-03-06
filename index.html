@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <!-- Word Input Section -->
+      <div id="word-input-section" class="hide">
+        <input type="text" id="opponent-word" placeholder="Enter a word for the player to guess" maxlength="20">
+        <button id="submit-word">Submit Word</button>
+      </div>
+      
+      <!-- Options, Letters, and User Input Section -->
+      <div id="options-container"></div>
+      <div id="letter-container" class="letter-container hide"></div>
+      <div id="user-input-section"></div>
+
+      <!-- Canvas for Hangman Drawing -->
+      <canvas id="canvas"></canvas>
+
+      <!-- New Game Container -->
+      <div id="new-game-container" class="new-game-popup hide">
+        <div id="result-text"></div>
+        <button id="new-game-button">New Game</button>
+      </div>
+    </div>
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+    <script src="background.js"></script>
+  </body>
+</html>
